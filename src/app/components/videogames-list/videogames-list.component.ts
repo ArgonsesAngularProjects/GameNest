@@ -20,19 +20,21 @@ export class VideogamesListComponent {
   }
 
   editGame(game: VideoGame): void {
-    const newName = prompt('Enter new name:', game.name);
-    const newDeveloper = prompt('Enter new game developer:', game.developer);
-    const newDateString = prompt('Enter new date:', game.date?.toString()); 
-    const newPriceString = prompt('Enter new price:', game.price?.toString()); 
+    const newName = prompt('Enter new name:', game.name || "");
+    const newImageUrl = prompt('Enter new image url:', game.imageUrl || "");
+    const newDeveloper = prompt('Enter new game developer:', game.developer || "");
+    const newDateString = prompt('Enter new date:', game.date?.toString() || "");
+    const newPriceString = prompt('Enter new price:', game.price?.toString() || "");
   
     if (newName && newDeveloper && newDateString && newPriceString) {
-      const newDate = parseInt(newDateString, 10); 
-      const newPrice = parseFloat(newPriceString); 
+      const newDate = parseInt(newDateString, 10);
+      const newPrice = parseFloat(newPriceString);
   
-      game.name = newName;
-      game.developer = newDeveloper;
-      game.date = newDate;
-      game.price = newPrice;
+      game.imageUrl = newImageUrl || undefined;
+      game.name = newName || undefined;
+      game.developer = newDeveloper || undefined;
+      game.date = newDate || undefined;
+      game.price = newPrice || undefined;
   
       this.videoGameService.updateVideoGame(game)
         .subscribe(updatedGame => {
@@ -40,6 +42,7 @@ export class VideogamesListComponent {
         });
     }
   }
+  
   
 
   deleteGame(id: number): void {

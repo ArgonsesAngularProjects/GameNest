@@ -2,6 +2,7 @@
   "videoGames": [
     {
       "id": 1,
+      "imageUrl": "https://image.api.playstation.com/cdn/EP0238/CUSA12398_00/QABZIx8Ubf69EcsYvaiC1Zx0PPON7XvG.png",
       "name": "The Forest",
       "developer": "Endnight Games",
       "date": 2014,
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "imageUrl": "https://im9.cz/iR/short-tail/65648--mm1200x1200.jpg",
       "name": "Minecraft",
       "developer": "Mojang",
       "date": 2011,
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "imageUrl": "https://image.api.playstation.com/cdn/EP4467/CUSA00409_00/VJme7DCUmNN9lCMLv6eTpjjaUvNxh141.png",
       "name": "Outlast",
       "developer": "Red Barrels",
       "date": 2013,
@@ -23,6 +26,7 @@
     },
     {
       "name": "Subnautica",
+      "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202009/3006/C76j3lYg8BNBWJRSYtI2ONbo.png",
       "developer": "Unknown Worlds",
       "price": 16.99,
       "date": 2014,

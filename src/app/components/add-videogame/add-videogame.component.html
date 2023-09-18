@@ -2,6 +2,10 @@
     <h1>Add Game Form</h1>
     <form (submit)="addGame()">
       <div class="form-group">
+        <label for="name">Image Url:</label>
+        <input type="text" class="form-control" id="url" [(ngModel)]="newVideoGame.imageUrl" name="url" required>
+      </div>
+      <div class="form-group">
         <label for="name">Game Name:</label>
         <input type="text" class="form-control" id="name" [(ngModel)]="newVideoGame.name" name="name" required>
       </div>

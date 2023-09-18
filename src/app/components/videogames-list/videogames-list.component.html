@@ -7,6 +7,7 @@
       <thead>
         <tr>
           <th>ID</th>
+          <th>Image</th>
           <th>Name</th>
           <th>Developer</th>
           <th>Date</th>
@@ -17,6 +18,7 @@
       <tbody>
         <tr *ngFor="let game of videoGames">
           <td>{{ game.id }}</td>
+          <td><img src={{game.imageUrl}} alt="image" width="100px" height="100px"/></td>
           <td>{{ game.name }}</td>
           <td>{{ game.developer }}</td>
           <td>{{ game.date }}</td>
