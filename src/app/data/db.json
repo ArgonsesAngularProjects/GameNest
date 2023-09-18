@@ -1,0 +1,25 @@
+{
+  "videoGames": [
+    {
+      "id": 1,
+      "name": "The Forest",
+      "developer": "Endnight Games",
+      "date": 2014,
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "name": "Minecraft",
+      "developer": "Mojang",
+      "date": 2011,
+      "price": 26.95
+    },
+    {
+      "id": 3,
+      "name": "Outlast",
+      "developer": "Red Barrels",
+      "date": 2013,
+      "price": 19.99
+    }
+  ]
+}
