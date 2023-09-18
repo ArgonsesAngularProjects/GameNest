@@ -1,13 +1,17 @@
 <div class="container">
-    <h1>Seznam her</h1>
+    <h1>The VideoGames List</h1>
+    <hr>
+    <button class="add-btn">Add Game</button>
+    <br><br>
     <table class="table">
       <thead>
         <tr>
           <th>ID</th>
-          <th>Název</th>
-          <th>Vývojář</th>
-          <th>Ročník</th>
-          <th>Cena</th>
+          <th>Name</th>
+          <th>Developer</th>
+          <th>Date</th>
+          <th>Price</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -17,6 +21,10 @@
           <td>{{ game.developer }}</td>
           <td>{{ game.date }}</td>
           <td>{{ game.price | currency:'USD':'symbol' }}</td>
+          <td>
+            <button class="edit-btn" (click)="editGame(game)">Edit</button>
+            <button class="delete-btn" (click)="deleteGame(game.id)">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>

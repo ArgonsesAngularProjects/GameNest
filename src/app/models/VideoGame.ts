@@ -1,5 +1,5 @@
 export class VideoGame {
-    id?: number;
+    id!: number;
     name?: string;
     developer?: string;
     date?: number;
