@@ -20,6 +20,13 @@
       "developer": "Red Barrels",
       "date": 2013,
       "price": 19.99
+    },
+    {
+      "name": "Subnautica",
+      "developer": "Unknown Worlds",
+      "price": 16.99,
+      "date": 2014,
+      "id": 4
     }
   ]
 }
