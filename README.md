@@ -1,27 +1,27 @@
 # GameNest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+GameNest is a CRUD project that allows users to create, read, update and delete games from a JSON-server database.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To install the project, you need to have [Node.js] and [Angular CLI] installed on your system. Then, follow these steps:
 
-## Code scaffolding
+- Clone the repository from GitHub: `git clone https://github.com/ArgonsesAngularProjects/GameNest.git`
+- Navigate to the project folder: `cd GameNest`
+- Install the dependencies: `npm install`
+- Start the JSON-server: `cd src/app/data` then `json-server --watch db.json`
+- Start the Angular app: `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+The app will run on `http://localhost:4200/` by default. You can see the list of games on the home page, and use the buttons to add, edit or delete games. You can also search for games by name or genre using the search bar (Comming soon).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+The app has the following features:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- CRUD operations on games using JSON-server as a mock backend
+- Pagination and sorting of games
+- Search functionality by name or genre (Comming soon)
+- Form validation using Reactive Forms (Comming soon)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
