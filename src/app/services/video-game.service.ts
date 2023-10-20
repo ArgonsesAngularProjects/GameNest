@@ -25,6 +25,11 @@ export class VideoGameService {
     return this.http.put<VideoGame>(url, videoGame);
   }
 
+  showDetails(id: number): Observable<VideoGame> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<VideoGame>(url)
+  }
+
   deleteVideoGame(id: number): Observable<void> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.delete<void>(url);

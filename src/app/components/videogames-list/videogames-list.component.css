@@ -80,3 +80,12 @@
   background-color: #d32f2f;
 }
 
+.details-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

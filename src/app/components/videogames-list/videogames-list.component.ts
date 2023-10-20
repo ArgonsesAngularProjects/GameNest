@@ -42,8 +42,14 @@ export class VideogamesListComponent {
         });
     }
   }
-  
-  
+
+  showDetails(id: number): void {
+    this.videoGameService.showDetails(id)
+      .subscribe(videogame => {
+        let message = `Name: ${videogame.name}\nDeveloper: ${videogame.developer}\nDate: ${videogame.date}\nPrice: ${videogame.price}\nImage URL: ${videogame.imageUrl}`; 
+        alert(message); 
+      });
+  }
 
   deleteGame(id: number): void {
     const confirmDelete = confirm('Really want to delete this game?');
@@ -56,3 +62,4 @@ export class VideogamesListComponent {
     }
   }
 }
+  

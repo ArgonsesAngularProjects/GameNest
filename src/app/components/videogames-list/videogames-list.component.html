@@ -24,6 +24,7 @@
           <td>{{ game.date }}</td>
           <td>{{ game.price | currency:'USD':'symbol' }}</td>
           <td>
+            <button class="details-btn" (click)="showDetails(game.id)">Details</button>
             <button class="edit-btn" (click)="editGame(game)">Edit</button>
             <button class="delete-btn" (click)="deleteGame(game.id)">Delete</button>
           </td>
